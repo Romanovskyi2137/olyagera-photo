@@ -137,7 +137,6 @@ header .menu-primary-container ul a:hover {
 #about_me_block .about__media_block img {
   z-index: 10;
   max-width: 450px;
-  max-height: 450px;
 }
 @media (max-width: 1200px) {
   #about_me_block .about__media_block img {
@@ -145,20 +144,31 @@ header .menu-primary-container ul a:hover {
     max-height: none;
   }
 }
+@media (min-width: 1200px) {
+  #about_me_block .about__media_block img {
+    max-width: 650px;
+  }
+}
 #about_me_block .about__text_block {
   display: flex;
   flex-direction: column;
 }
 #about_me_block .about__text_block p {
-  max-width: 450px;
+  max-width: 470px;
   font-family: "Montserrat", sans-serif;
   font-size: 22px;
   font-weight: 500;
   line-height: 36px;
+  word-wrap: break-word;
 }
 @media (max-width: 1200px) {
   #about_me_block .about__text_block p {
     max-width: none;
+  }
+}
+@media (min-width: 1200px) {
+  #about_me_block .about__text_block p {
+    font-size: 24px;
   }
 }
 #about_me_block .about__text_block a {
@@ -220,6 +230,13 @@ header .menu-primary-container ul a:hover {
     transform: translateY(0);
   }
 }
+footer p {
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+  padding: 20px 0;
+}
+
 /* Reset CSS */
 * {
   margin: 0;

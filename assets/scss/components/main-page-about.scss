@@ -24,10 +24,12 @@
         img {
             z-index: 10;
             max-width: 450px;
-            max-height: 450px;
             @media (max-width: $desktop) {
                 max-width: 100%;
                 max-height: none;
+            }
+            @media(min-width: $desktop) {
+                max-width: 650px;
             }
         }
     };
@@ -35,13 +37,17 @@
         display: flex;
         flex-direction: column;
         p {
-            max-width: 450px;
+            max-width: 470px;
             font-family: $main-font;
             font-size: 22px;
             font-weight: 500;
             line-height: 36px;
+            word-wrap: break-word;
             @media(max-width: $desktop) {
                 max-width: none;
+            }
+            @media(min-width: $desktop) {
+                font-size: 24px;
             }
         }
         a {

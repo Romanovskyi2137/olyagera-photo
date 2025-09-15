@@ -6,21 +6,21 @@
             <div class="media_block__decor_outter">
                 <div class="media_block__decor_inner"></div>
             </div>
-            <img 
-                src="<?php echo get_template_directory_uri(); ?>/assets/img/photographer-sample.png" 
-                alt="photographer photo"
-            />
+            <?php if (get_field("photographer_image")) : ?>
+                <img
+                    src="<?php the_field("photographer_image"); ?>"
+                    alt="Photographer"
+                />
+            <?php endif; ?>
         </div>
         <section class="about__text_block">
             <p>
-                Я знімаю моменти, які залишаються у пам’яті назавжди. <br/> 
-                Моє завдання — показати красу та емоції в найщиріших кадрах.<br/> 
-                Для мене фотографія — це спосіб розповідати історії.
+                <?php if (get_field("about_text")) the_field("about_text"); ?>
             </p>
             <a
                 href="#"
             >
-                Переглянути портфоліо
+                <?php if (get_field("about_button_text")) the_field("about_button_text"); ?>
             </a>
         </section>
 </section>
