@@ -1,0 +1,31 @@
+# Node
+node_modules/
+npm-debug.log
+yarn.lock
+package-lock.json
+
+# SCSS cache
+.sass-cache/
+*.css.map
+
+# Compiled CSS (optional — only if you want to ignore built CSS)
+#assets/css/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# WordPress
+wp-config.php
+wp-content/plugins/
+wp-content/uploads/
+wp-content/upgrade/
+wp-content/cache/
+
+# Log files
+*.log
+
+# VSCode (optional)
+.vscode/

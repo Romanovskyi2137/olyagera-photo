@@ -1,0 +1,60 @@
+@use "_variables" as *;
+@use "../scss/partials/header-main.scss";
+@use "../scss/components/main-page-hero.scss";
+@use "../scss/components/main-page-about.scss";
+@use "../scss/components/main-page-scrollBtn.scss";
+
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-size: 100%;
+    background-color: $main-bgc;
+    font-family: $main-font;
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button, input, textarea, select {
+    font: inherit;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    font-size: inherit;
+}
+/* /reset css */
+
+//  overall styles
+::-webkit-scrollbar {
+  width: 0px; /* scrollbar width */ /* set to 0px to hide scrollbar */
+}
+::-webkit-scrollbar-track {
+  background: transparent; /* makes track transparent */
+}
+
+[class*="__container"] {
+    padding-left: 30px;
+    padding-right: 30px ;
+}
+
