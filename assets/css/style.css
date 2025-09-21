@@ -253,6 +253,16 @@ html, body {
   scroll-behavior: smooth;
 }
 
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 1 auto;
+}
+
 ul, ol {
   list-style: none;
 }

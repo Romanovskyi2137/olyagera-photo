@@ -1,6 +1,8 @@
 <?php get_header(); ?>
-<main>
-    
-</main>
+<div class="wrapper">
+    <main>
+        
+    </main>
+</div>
 <?php get_footer(); ?>
 </html>

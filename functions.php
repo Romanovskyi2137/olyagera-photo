@@ -1,4 +1,7 @@
 <?php
+// imports
+require get_template_directory() . '/inc/cpt-albums.php';
+// 
 function theme_enqueue_styles() {
     wp_enqueue_style('main_css', get_template_directory_uri() . '/assets/css/style.css');
 }
