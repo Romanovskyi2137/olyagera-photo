@@ -1,35 +1,23 @@
 @use "../variables.scss" as *;
 
-#about_me_block {
+.about_me_block {
     position: relative;
     min-height: 100vh;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     .about__media_block {
-        position: relative;
-        .media_block__decor_outter {
-            // position: absolute;
-            // bottom: 0;
-            // right: 0;
-            // height: 500px;
-            // width: 500px;
-            // background-color: black;
-            // border-radius: 50%;
-            // z-index: 1;
-            .media_block__decor_inner {
-
-            }
-        };
         img {
             z-index: 10;
-            max-width: 450px;
+            max-height: 95vh;
+            margin-right: 50px;
             @media (max-width: $desktop) {
-                max-width: 100%;
-                max-height: none;
+                max-height: 80vh;
+                margin-right: 0;
             }
-            @media(min-width: $desktop) {
-                max-width: 650px;
+            @media(max-width: $mobile) {
+                max-width: 100%
             }
         }
     };
@@ -37,7 +25,7 @@
         display: flex;
         flex-direction: column;
         p {
-            max-width: 470px;
+            max-width: 570px;
             font-family: $main-font;
             font-size: 22px;
             font-weight: 500;
@@ -45,6 +33,7 @@
             word-wrap: break-word;
             @media(max-width: $desktop) {
                 max-width: none;
+                text-align: center;
             }
             @media(min-width: $desktop) {
                 font-size: 24px;
@@ -71,6 +60,7 @@
         @media(max-width: $desktop) {
             margin-top: 30px;
             align-items: center;
+            justify-content: center;
         }
     };
     @media(max-width: $desktop) {

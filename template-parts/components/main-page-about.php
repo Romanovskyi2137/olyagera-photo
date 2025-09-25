@@ -5,7 +5,7 @@
 ?>
 <section
     id="about_me_block"
-    class="__container"
+    class="about_me_block __container"
 >
         <div class="about__media_block">
             <?php if ($photographer_image) : ?>

@@ -32,6 +32,23 @@ add_action("init", "add_menus");
 
 add_theme_support( 'title-tag' );
 
+// smush plugin config
+add_action('after_switch_theme', function() {
+    $settings = get_option('wp_smush_settings', []);
+
+    $settings['resize'] = [
+        'enabled' => true,
+        'width'   => 2500,
+        'height'  => 2500
+    ];
+
+    $settings['backup'] = true;
+    $settings['auto'] = true; // авто-оптимізація
+    $settings['lazy_load']['enabled'] = true;
+
+    update_option('wp_smush_settings', $settings);
+});
+// 
 
 if (class_exists('ACF')) {
 

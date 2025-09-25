@@ -3,7 +3,7 @@
 ?>
 <div class="wrapper">
     <main>
-       <div class="portfolio-albums">
+       <section class="portfolio-albums">
         <?php
         $args = [
             'post_type' => 'album',
@@ -21,7 +21,7 @@
                     <a href="<?php the_permalink(); ?>">
                         <?php
                             $images = acf_photo_gallery("album", get_the_ID());
-                            $image = reset($images)['thumbnail_image_url'];
+                            $image = reset($images)['full_image_url'];
                         ?>
                         <img src=<?php echo $image ?> alt="" />
                         <h2><?php the_title(); ?></h2>
@@ -34,7 +34,7 @@
             echo '<p>Альбомів поки немає.</p>';
         endif;
         ?>
-    </div>
+    </section>
     </main>
 </div>
 <?php get_footer(); ?>
