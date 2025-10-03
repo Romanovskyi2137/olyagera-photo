@@ -3,7 +3,7 @@
 ?>
 <div class="wrapper">
     <main>
-       <section class="portfolio-albums">
+       <section class="portfolio-albums __container">
         <?php
         $args = [
             'post_type' => 'album',

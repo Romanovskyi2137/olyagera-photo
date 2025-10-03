@@ -20,7 +20,7 @@
                 <?php if ($about_text) echo $about_text; ?>
             </p>
             <a
-                href="#"
+                href="https://olyagera-photo.local/portfolio/"
             >
                 <?php if ($about_button_text) echo $about_button_text; ?>
             </a>
