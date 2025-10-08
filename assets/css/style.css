@@ -94,37 +94,6 @@ header .menu-primary-container ul a:hover {
   display: none !important;
 }
 
-.hero_block {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.hero_block .hero_block__logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  max-height: 450px;
-  max-width: 550px;
-  opacity: 0.85;
-}
-.hero_block .hero_block__logo img {
-  height: 100%;
-  width: 100%;
-}
-.hero_block .hero_block__filter {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.35);
-  z-index: 1;
-}
-
 .about_me_block {
   position: relative;
   min-height: 100vh;
@@ -203,35 +172,6 @@ header .menu-primary-container ul a:hover {
   }
 }
 
-.hero_block__scroll_down_button {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 2;
-  top: 90%;
-  left: auto;
-  animation: float 2s infinite;
-  width: 50px;
-  height: 50px;
-}
-.hero_block__scroll_down_button img {
-  width: 30px;
-  height: 30px;
-  opacity: 0.85;
-}
-
-@keyframes float {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-12px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
 footer p {
   text-align: center;
   font-size: 14px;
@@ -421,6 +361,10 @@ h1, h2, h3, h4, h5, h6 {
     padding-left: 0;
     padding-right: 0;
   }
+}
+
+.carousel_section {
+  padding-top: 50px;
 }
 
 /*# sourceMappingURL=style.css.map */

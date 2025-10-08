@@ -12,28 +12,31 @@ const toggleMenu = () => {
 burgerBtn.addEventListener('click', toggleMenu);
 closeBtn.addEventListener('click', toggleMenu);
 
-const scrollDownBtn = document.querySelector('.hero_block__scroll_down_button');
-const aboutMeBlock = document.querySelector('#about_me_block');
+// scroll to about block
+// const scrollDownBtn = document.querySelector('.hero_block__scroll_down_button');
+// const aboutMeBlock = document.querySelector('#about_me_block');
 
-scrollDownBtn.addEventListener('click', (e) => {
-    e.preventDefault();
-    aboutMeBlock.scrollIntoView({ behavior: 'smooth' });
-});
+// scrollDownBtn.addEventListener('click', (e) => {
+//     e.preventDefault();
+//     aboutMeBlock.scrollIntoView({ behavior: 'smooth' });
+// });
 
 // album page scroll to top btn
 
 document.addEventListener("DOMContentLoaded", () => {
   const scrollBtn = document.getElementById("scrollToTop");
+  if (scrollBtn) {
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 300) {
+          scrollBtn.classList.add("visible");
+        } else {
+          scrollBtn.classList.remove("visible");
+        }
+      });
 
-  window.addEventListener("scroll", () => {
-    if (window.scrollY > 300) {
-      scrollBtn.classList.add("visible");
-    } else {
-      scrollBtn.classList.remove("visible");
-    }
-  });
-
-  scrollBtn.addEventListener("click", () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  });
+      scrollBtn.addEventListener("click", () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      });
+  };
+  return
 });

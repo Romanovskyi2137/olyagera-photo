@@ -1,8 +1,8 @@
 @use "_variables" as *;
 @use "../scss/partials/header-main.scss";
-@use "../scss/components/main-page-hero.scss";
+// @use "../scss/components/main-page-hero.scss";
 @use "../scss/components/main-page-about.scss";
-@use "../scss/components/main-page-scrollBtn.scss";
+// @use "../scss/components/main-page-scrollBtn.scss";
 @use "../scss/partials/footer-main.scss";
 @use "../scss/portfolio-page.scss";
 @use "../scss/single-album.scss";
@@ -85,3 +85,11 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
+.carousel_section {
+    padding-top: 50px;
+    // .carousel {
+
+    //     img {
+    //     }
+    // }
+}
