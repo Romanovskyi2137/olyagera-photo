@@ -9,6 +9,29 @@ header {
   padding-right: 30px;
   max-height: 50px;
 }
+header .social_icon {
+  display: block;
+  position: absolute;
+  right: 270px;
+  top: 20px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+header .social_icon img {
+  width: 100%;
+  height: 100%;
+}
+header .social_icon:hover {
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
+@media (max-width: 768px) {
+  header .social_icon {
+    top: 30px;
+    right: 85px;
+  }
+}
 header .burger_btn {
   display: none;
 }
@@ -46,11 +69,12 @@ header .menu-primary-container ul a {
   font-weight: 500;
   letter-spacing: 1px;
   font-size: 18px;
+  color: #666;
 }
 header .menu-primary-container ul a:hover {
   transition: 0.3s;
   transform: translateY(-1.5px);
-  color: rgba(31, 31, 31, 0.685);
+  color: rgba(12, 12, 12, 0.885);
 }
 @media (max-width: 768px) {
   header .menu-primary-container ul a {
@@ -67,7 +91,7 @@ header .menu-primary-container ul a:hover {
 }
 @media (max-width: 768px) {
   header .menu-primary-container {
-    background-color: #ECE2DD;
+    background-color: white;
     width: 100vw;
     height: 100vh;
     transform: translateY(-100vh);
@@ -126,9 +150,10 @@ header .menu-primary-container ul a:hover {
   max-width: 570px;
   font-family: "Montserrat", sans-serif;
   font-size: 22px;
-  font-weight: 500;
+  font-weight: 300;
   line-height: 36px;
   word-wrap: break-word;
+  color: #666;
 }
 @media (max-width: 1200px) {
   .about_me_block .about__text_block p {
@@ -148,15 +173,16 @@ header .menu-primary-container ul a:hover {
   padding: 15px 20px 15px 20px;
   background-color: black;
   font-family: "Montserrat", sans-serif;
-  color: #ECE2DD;
+  color: white;
   border-radius: 20px;
   letter-spacing: 1px;
   font-size: 18px;
+  font-weight: 300;
   cursor: pointer;
 }
 .about_me_block .about__text_block a:hover {
-  background-color: rgba(31, 31, 31, 0.685);
-  box-shadow: 0 0 5px rgba(31, 31, 31, 0.685);
+  background-color: rgba(12, 12, 12, 0.885);
+  box-shadow: 0 0 5px rgba(12, 12, 12, 0.885);
   transition: all 0.3s;
 }
 @media (max-width: 1200px) {
@@ -295,7 +321,7 @@ footer p {
 html, body {
   height: 100%;
   font-size: 100%;
-  background-color: #ECE2DD;
+  background-color: white;
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
   scroll-behavior: smooth;
