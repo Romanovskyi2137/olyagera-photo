@@ -8,8 +8,10 @@
                 if( $images ) : ?>
                     <div class="acf-photo-gallery-item">
                         <?php foreach( $images as $image ): ?>
-                                    <img src="<?php echo $image['full_image_url']; ?>" 
-                                        alt="alt" />
+                            <a href="<?php echo $image['full_image_url']?>" rel="lightbox-gallery" target="blank">
+                                <img src="<?php echo $image['full_image_url']; ?>" 
+                                    alt="alt" />
+                            </a>
                         <?php endforeach; ?>
                     </div>
             <?php endif; ?>

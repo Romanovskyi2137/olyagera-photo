@@ -85,6 +85,16 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
+
 .carousel_section {
-    padding-top: 50px
+    padding-top: 50px;
+    padding-bottom: 20px;
+    div {
+        max-height: 80vh !important;
+        max-width: 100% !important;
+    } 
+    img {
+        max-height: 80vh !important;
+        object-fit: contain !important;
+    }
 }

@@ -1,19 +1,23 @@
+@use "./variables.scss" as *;
+
+
 .single_album {
-    padding-top: 80px;
+  padding-top: 50px;
 }
-
 .acf-photo-gallery-item {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-
+  column-count: 2;
+  column-gap: 0.5rem;
+  @media (max-width: $tablet) {
+    column-count: 1;
+  }
   img {
     width: 100%;
-    max-height: calc(100vh - 120px); // висота екрану мінус верхній відступ
-    object-fit: contain; // фото не обрізається, а вміщається
-    // transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: block;
+    margin-bottom: 0.5rem;
+    object-fit: contain;
   }
 }
+
 
 /* Кнопка прокрутки вгору */
 .scroll-to-top {

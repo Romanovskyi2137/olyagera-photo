@@ -268,17 +268,22 @@ footer p {
   }
 }
 .single_album {
-  padding-top: 80px;
+  padding-top: 50px;
 }
 
 .acf-photo-gallery-item {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
+  column-count: 2;
+  column-gap: 0.5rem;
+}
+@media (max-width: 768px) {
+  .acf-photo-gallery-item {
+    column-count: 1;
+  }
 }
 .acf-photo-gallery-item img {
   width: 100%;
-  max-height: calc(100vh - 120px);
+  display: block;
+  margin-bottom: 0.5rem;
   object-fit: contain;
 }
 
@@ -391,6 +396,15 @@ h1, h2, h3, h4, h5, h6 {
 
 .carousel_section {
   padding-top: 50px;
+  padding-bottom: 20px;
+}
+.carousel_section div {
+  max-height: 80vh !important;
+  max-width: 100% !important;
+}
+.carousel_section img {
+  max-height: 80vh !important;
+  object-fit: contain !important;
 }
 
 /*# sourceMappingURL=style.css.map */
