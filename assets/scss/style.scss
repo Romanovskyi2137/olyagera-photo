@@ -78,13 +78,31 @@ h1, h2, h3, h4, h5, h6 {
     padding-left: 30px;
     padding-right: 30px;
     max-width: 1440px;
-    @media (max-width: $mobile) {
-        max-width: none;
+    @media (max-width: $tablet) {
         padding-left: 0;
         padding-right: 0;
     }
+    @media (max-width: $mobile) {
+        max-width: none;
+    }
 }
 
+
 .carousel_section {
-    padding-top: 50px
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    div {
+        max-height: 80vh !important;
+        max-width: 100% !important;
+    } 
+    img {
+        max-height: 80vh !important;
+        object-fit: contain !important;
+    }
+    @media (max-width: $tablet) {
+        height: auto;
+        padding-top: 30px;
+        padding-bottom: 30px;  
+    }  
 }

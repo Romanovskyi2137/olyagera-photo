@@ -34,7 +34,8 @@
             color: $color;
             @media(max-width: $desktop) {
                 max-width: none;
-                text-align: center;
+                padding-left: 15px;
+                padding-right: 15px;
             }
             @media(min-width: $desktop) {
                 font-size: 24px;
@@ -48,7 +49,7 @@
             background-color: black;
             font-family: $main-font;
             color: $main-bgc;
-            border-radius: 20px;
+            border-radius: 8px;
             letter-spacing: 1px;
             font-size: 18px;
             font-weight: 300;

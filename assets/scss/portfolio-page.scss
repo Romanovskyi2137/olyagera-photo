@@ -61,6 +61,7 @@
 @media (max-width: 992px) {
   .portfolio-albums {
     grid-template-columns: repeat(2, 1fr); // 2 колонки на планшетах
+    padding-top: 50px;
   }
 }
 

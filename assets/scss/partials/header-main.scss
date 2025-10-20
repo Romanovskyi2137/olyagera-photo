@@ -1,9 +1,9 @@
 @use '../../../assets/scss/_variables.scss' as *;
 
 header {
-    position: fixed;
-    top: 0;
-    left: 0;
+    position: relative;
+    // top: 0;
+    // left: 0;
     z-index: 5;
     width: 100%;
     padding-left: 30px;
