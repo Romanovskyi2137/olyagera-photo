@@ -55,6 +55,13 @@
       }
     }
   }
+  .portfolio_noalbums_msg {
+    grid-column: 1 / -1;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #666;
+    padding: 40px 0;
+  }
 }
 
 // Адаптивність
@@ -68,5 +75,5 @@
 @media (max-width: 600px) {
   .portfolio-albums {
     grid-template-columns: 1fr; // 1 колонка на мобільних
-  }
+  } 
 }

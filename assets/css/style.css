@@ -101,6 +101,7 @@ header .menu-primary-container ul a:hover {
 }
 @media (max-width: 1025px) {
   header {
+    position: absolute;
     padding-left: 0;
     padding-right: 0;
   }
@@ -286,6 +287,13 @@ footer p {
   opacity: 1;
   transform: translateY(0);
 }
+.portfolio-albums .portfolio_noalbums_msg {
+  grid-column: 1/-1;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #666;
+  padding: 40px 0;
+}
 
 @media (max-width: 992px) {
   .portfolio-albums {
@@ -410,6 +418,10 @@ h1, h2, h3, h4, h5, h6 {
 
 ::-webkit-scrollbar-track {
   background: transparent; /* makes track transparent */
+}
+
+.no_scroll {
+  overflow-y: hidden;
 }
 
 [class*=__container] {

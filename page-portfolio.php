@@ -31,7 +31,7 @@
             <?php endwhile;
             wp_reset_postdata();
         else :
-            echo '<p>Альбомів поки немає.</p>';
+            echo '<p class="portfolio_noalbums_msg">Альбомів поки немає.</p>';
         endif;
         ?>
     </section>

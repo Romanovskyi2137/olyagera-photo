@@ -74,6 +74,10 @@ h1, h2, h3, h4, h5, h6 {
   background: transparent; /* makes track transparent */
 }
 
+.no_scroll {
+    overflow-y: hidden;
+}
+
 [class*="__container"] {
     padding-left: 30px;
     padding-right: 30px;
