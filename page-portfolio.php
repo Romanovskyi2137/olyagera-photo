@@ -37,4 +37,5 @@
     </section>
     </main>
 </div>
+<button class="scroll-to-top" id="scrollToTop">↑</button>
 <?php get_footer(); ?>

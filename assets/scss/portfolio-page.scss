@@ -1,7 +1,7 @@
 .portfolio-albums {
-  padding-top: 80px;
+  padding-top: 90px;
   display: grid;
-  grid-template-columns: repeat(4, 1fr); // фіксовано 3 колонки
+  grid-template-columns: repeat(4, 1fr); // 4 колонки на десктопі
   gap: 1.5rem;
 
   .album-item {
@@ -11,16 +11,19 @@
     box-shadow: 0 3px 10px rgba(0,0,0,0.1);
     background: #fff;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    aspect-ratio: 4 / 3; // стабільна пропорція для всіх елементів
 
     a {
       display: block;
       text-decoration: none;
       color: inherit;
+      height: 100%;
+      width: 100%;
     }
 
     img {
       width: 100%;
-      height: 220px; // однакова висота картинок
+      height: 100%;
       object-fit: cover;
       display: block;
       transition: transform 0.4s ease;
@@ -39,6 +42,7 @@
       opacity: 0;
       transform: translateY(15px);
       transition: opacity 0.3s ease, transform 0.3s ease;
+      pointer-events: none; // не блокує клік на зображення
     }
 
     &:hover {
@@ -55,6 +59,7 @@
       }
     }
   }
+
   .portfolio_noalbums_msg {
     grid-column: 1 / -1;
     text-align: center;
@@ -64,16 +69,22 @@
   }
 }
 
-// Адаптивність
+// ====== Адаптивність ======
+
+@media (max-width: 1200px) {
+  .portfolio-albums {
+    grid-template-columns: repeat(3, 1fr); // 3 колонки на ноутбуках
+  }
+}
+
 @media (max-width: 992px) {
   .portfolio-albums {
     grid-template-columns: repeat(2, 1fr); // 2 колонки на планшетах
-    padding-top: 50px;
   }
 }
 
 @media (max-width: 600px) {
   .portfolio-albums {
     grid-template-columns: 1fr; // 1 колонка на мобільних
-  } 
+  }
 }

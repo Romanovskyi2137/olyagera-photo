@@ -2,7 +2,7 @@
 
 
 .single_album {
-  padding-top: 50px;
+  padding-top: 90px;
 }
 .acf-photo-gallery-item {
   column-count: 2;
@@ -15,37 +15,5 @@
     display: block;
     margin-bottom: 0.5rem;
     object-fit: contain;
-  }
-}
-
-
-/* Кнопка прокрутки вгору */
-.scroll-to-top {
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
-  width: 45px;
-  height: 45px;
-  border-radius: 50%;
-  background: #000;
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.2rem;
-  cursor: pointer;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.3s ease, transform 0.3s ease;
-  z-index: 999;
-
-  &:hover {
-    background: #444;
-    transform: scale(1.1);
-  }
-
-  &.visible {
-    opacity: 1;
-    pointer-events: all;
   }
 }

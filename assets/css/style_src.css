@@ -237,7 +237,7 @@ footer p {
 }
 
 .portfolio-albums {
-  padding-top: 80px;
+  padding-top: 90px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 1.5rem;
@@ -249,15 +249,18 @@ footer p {
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
   background: #fff;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  aspect-ratio: 4/3;
 }
 .portfolio-albums .album-item a {
   display: block;
   text-decoration: none;
   color: inherit;
+  height: 100%;
+  width: 100%;
 }
 .portfolio-albums .album-item img {
   width: 100%;
-  height: 220px;
+  height: 100%;
   object-fit: cover;
   display: block;
   transition: transform 0.4s ease;
@@ -275,6 +278,7 @@ footer p {
   opacity: 0;
   transform: translateY(15px);
   transition: opacity 0.3s ease, transform 0.3s ease;
+  pointer-events: none;
 }
 .portfolio-albums .album-item:hover {
   transform: translateY(-4px);
@@ -295,10 +299,14 @@ footer p {
   padding: 40px 0;
 }
 
+@media (max-width: 1200px) {
+  .portfolio-albums {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
 @media (max-width: 992px) {
   .portfolio-albums {
     grid-template-columns: repeat(2, 1fr);
-    padding-top: 50px;
   }
 }
 @media (max-width: 600px) {
@@ -307,7 +315,7 @@ footer p {
   }
 }
 .single_album {
-  padding-top: 50px;
+  padding-top: 90px;
 }
 
 .acf-photo-gallery-item {
@@ -324,35 +332,6 @@ footer p {
   display: block;
   margin-bottom: 0.5rem;
   object-fit: contain;
-}
-
-/* Кнопка прокрутки вгору */
-.scroll-to-top {
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
-  width: 45px;
-  height: 45px;
-  border-radius: 50%;
-  background: #000;
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.2rem;
-  cursor: pointer;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.3s ease, transform 0.3s ease;
-  z-index: 999;
-}
-.scroll-to-top:hover {
-  background: #444;
-  transform: scale(1.1);
-}
-.scroll-to-top.visible {
-  opacity: 1;
-  pointer-events: all;
 }
 
 /* Reset CSS */
@@ -439,6 +418,35 @@ h1, h2, h3, h4, h5, h6 {
   [class*=__container] {
     max-width: none;
   }
+}
+
+/* Кнопка прокрутки вгору */
+.scroll-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: #000;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  z-index: 999;
+}
+.scroll-to-top:hover {
+  background: #444;
+  transform: scale(1.1);
+}
+.scroll-to-top.visible {
+  opacity: 1;
+  pointer-events: all;
 }
 
 .carousel_section {
